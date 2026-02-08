@@ -6,11 +6,11 @@
     <title>Kyle | Web Developer</title>
 
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js"></script>
+    
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
     <div class="navbar-inner">
         <div class="navbar-logo">Kyle</div>
 
@@ -59,17 +59,59 @@
       </div>
     </header>
 
-    <section id="about">
-      <div class="section-inner">
+    <section id="about" class="section section-about">
+      <div class="container">
         <h2>About</h2>
         <p>
           I'm a web developer with hands-on experience building and maintaining
           production web applications. My background includes working with
-          WordPress, PHP-based systems, React frontends, and MySQL-backed
-          backends.
+          WordPress, PHP-based systems, React frontends, and MySQL-backed backends.
         </p>
       </div>
     </section>
+    
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <h2>Projects</h2>
 
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <article class="project">
+            <h3>Chefs in the House</h3>
+            <span class="project-meta">WordPress · PHP · CSS</span>
+
+            <p>
+              A live production catering website built and maintained using
+              WordPress. Focused on clean layout, elegant presentation, and
+              content-driven design for a premium brand.
+            </p>
+
+            <a
+              href="https://chefsinthehouse.com/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View website →
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <h3>Personal Portfolio</h3>
+            <span class="project-meta">HTML · CSS · JavaScript</span>
+
+            <p>
+              A custom personal portfolio designed and built from scratch with
+              vanilla HTML, CSS, and JavaScript. Focused on layout, spacing,
+              responsiveness, and clean UI fundamentals.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
   </body>
 </html>

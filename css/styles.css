@@ -1,20 +1,15 @@
 :root {
-  --bg-main: radial-gradient(
-      1200px 600px at 20% 10%,
-      rgba(88, 80, 236, 0.18),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 500px at 80% 30%,
-      rgba(34, 197, 94, 0.14),
-      transparent 60%
-    ),
-    #0b0d12;
+  --bg-main: linear-gradient(315deg,#130f40,#000 74%);
 
-  --text-main: #f9fafb;
-  --text-muted: #9ca3af;
-  --accent: #c7f000;
+  --bg-surface: rgba(255, 255, 255, 0.04);
+
+  --text-main: #f5f7fa;
+  --text-muted: #9aa0a6;
+
+  --accent: #b6e300; /* softer than neon */
+  --border-subtle: rgba(255, 255, 255, 0.08);
 }
+
 
 * {
   box-sizing: border-box;
@@ -35,7 +30,23 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
+  transition: all .5s ease;
 }
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+  transition: all 0.4s ease;
+}
+
+/* SCROLLED STATE */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}
+
 
 /* HAMBURGER BUTTON */
 .navbar-toggle {
@@ -73,6 +84,12 @@ body {
   text-decoration: none;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
 }
 
 /* HERO */
@@ -150,13 +167,69 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 6rem 2rem;
+  padding: 8rem 0;
 }
 
-.section-inner {
-  max-width: 900px;
-  margin: 0 auto;
+.section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
 }
+
+.section p {
+  max-width: 720px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.section-about {
+  background: transparent;
+}
+
+.section-projects {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3.5rem;
+}
+
+.project {
+  max-width: 900px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.project p {
+  max-width: 720px;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .navbar-toggle {
