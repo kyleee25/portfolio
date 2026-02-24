@@ -161,8 +161,8 @@ body {
 }
 
 .tech-icons img {
-  width: 26px;
-  opacity: 0.7;
+  width: 30px;
+  opacity: 1;
 }
 
 /* SECTIONS */
@@ -190,46 +190,69 @@ section {
 }
 
 
-.projects-list {
+.projects {
+  padding: 6rem 0;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.project-list {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 3.5rem;
+  gap: 3rem;
 }
 
 .project {
-  max-width: 900px;
+  max-width: 720px;
 }
 
-.project h3 {
-  font-size: 1.5rem;
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
-.project-meta {
-  display: block;
+.project h3 {
+  font-size: 1.3rem;
+}
+
+.project-tech {
   font-size: 0.9rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
 }
 
 .project p {
-  max-width: 720px;
   line-height: 1.7;
-  margin-bottom: 1rem;
+  color: var(--text-muted);
 }
 
 .project-link {
   display: inline-block;
-  font-size: 0.95rem;
+  margin-top: 0.75rem;
   color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .project-link:hover {
   text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
   .navbar-toggle {
