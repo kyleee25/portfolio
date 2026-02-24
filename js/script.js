@@ -24,3 +24,21 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+timelineItems.forEach((item) => {
+  observer.observe(item);
+});
