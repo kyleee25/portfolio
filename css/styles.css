@@ -97,7 +97,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .hero-inner {
@@ -109,7 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .hero-text {
@@ -117,27 +117,43 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.25rem;
+  line-height: 1.1;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.03em;
 }
 
 .hero-text p {
+  max-width: 500px;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  line-height: 1.7;
 }
 
 .hero-button {
   display: inline-block;
-  padding: 0.75rem 1.6rem;
+  padding: 0.8rem 1.7rem;
   border-radius: 999px;
+
   background: var(--accent);
   color: #000;
-  font-weight: 500;
+
+  font-weight: 600;
   text-decoration: none;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
 
 .hero-image img {
+  display: block;
   width: 320px;
+  height: auto;
+
   border-radius: 24px;
   background: #fff;
 }
@@ -147,21 +163,58 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
 }
 
 .tech-label {
   font-size: 0.85rem;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .tech-icons {
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 1.15rem;
 }
 
 .tech-icons img {
-  width: 30px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+
+  transition: transform 0.25s ease;
+}
+
+.tech-icons img:hover {
+  transform: translateY(-3px);
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.25rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: translateY(-2px);
   opacity: 1;
 }
 
@@ -356,5 +409,20 @@ section {
   .navbar-links li a {
     font-size: 1.5rem;
     color: var(--text-main);
+  }
+  .contact-button {
+    display: inline-block;
+    background: var(--accent);
+    color: #000;
+    padding: 0.85rem 1.75rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .contact-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
   }
 }
