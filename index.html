@@ -3,36 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Kyle | Web Developer</title>
 
     <link rel="stylesheet" href="css/styles.css" />
-    
   </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-    <div class="navbar-inner">
-        <div class="navbar-logo">Kyle</div>
 
-        <button class="navbar-toggle" aria-label="Toggle menu">
-        ☰
+  <body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+
+        <a href="#home" class="navbar-logo">Kyle</a>
+
+        <button
+          class="navbar-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
         </button>
 
         <ul class="navbar-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
-    </div>
+
+      </div>
     </nav>
 
+    <!-- =========================
+         HERO
+    ========================== -->
+    <header class="hero" id="home">
 
-    <!-- HERO -->
-    <header class="hero">
       <div class="hero-inner">
 
         <div class="hero-text">
+
           <h1>Web Developer</h1>
 
           <p>
@@ -44,181 +69,415 @@
             Check Projects
           </a>
 
+
           <!-- TECH STACK -->
           <div class="tech-stack">
-            <span class="tech-label">Tech Stack:</span>
+
+            <span class="tech-label">
+              Tech Stack:
+            </span>
 
             <div class="tech-icons">
-              <img src="assets/icons/html.svg" alt="HTML" />
-              <img src="assets/icons/css.svg" alt="CSS" />
-              <img src="assets/icons/javascript.svg" alt="JavaScript" />
-              <img src="assets/icons/git.svg" alt="Git" />
-              <img src="assets/icons/wordpress.svg" alt="WordPress" />
+
+              <img
+                src="assets/icons/html.svg"
+                alt="HTML"
+                title="HTML"
+              />
+
+              <img
+                src="assets/icons/css.svg"
+                alt="CSS"
+                title="CSS"
+              />
+
+              <img
+                src="assets/icons/javascript.svg"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+
+              <img
+                src="assets/icons/git.svg"
+                alt="Git"
+                title="Git"
+              />
+
+              <img
+                src="assets/icons/wordpress.svg"
+                alt="WordPress"
+                title="WordPress"
+              />
+
             </div>
+
           </div>
 
           <!-- SOCIAL LINKS -->
           <div class="social-links">
 
-            <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer">
-              <img src="assets/icons/github.svg" alt="GitHub" />
+            <a
+              href="https://github.com/kyleee25"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <img
+                src="assets/icons/github.svg"
+                alt="GitHub"
+              />
+
               <span>GitHub</span>
             </a>
 
-            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer">
-              <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+            <a
+              href="https://www.linkedin.com/in/kyle-bryan-espulgar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img
+                src="assets/icons/linkedin.svg"
+                alt="LinkedIn"
+              />
+
               <span>LinkedIn</span>
             </a>
 
           </div>
+
         </div>
 
+
+        <!-- HERO IMAGE -->
         <div class="hero-image">
-          <img src="assets/images/my-photo.jpg" alt="Kyle - Web Developer" />
+
+          <img
+            src="assets/images/my-photo.jpg"
+            alt="Kyle - Web Developer"
+          />
+
         </div>
 
       </div>
+
     </header>
 
-    <section id="about" class="section section-about">
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="section section-about reveal">
+
       <div class="container">
+
         <h2>About</h2>
+
         <p>
           I'm a web developer with hands-on experience building and maintaining
-          production web applications. My background includes working with
-          WordPress, PHP-based systems, React frontends, and MySQL-backed backends.
+          production web applications. My background includes frontend
+          development with HTML, CSS, JavaScript, and React, backend development
+          using PHP and MySQL, and content management with WordPress.
         </p>
+
+        <p>
+          I've also worked with MVC architecture, Git-based source control,
+          responsive web development, Retool, XML parsing, and XSLT
+          transformations.
+        </p>
+
       </div>
+
     </section>
-    
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
     <section class="projects" id="projects">
+
       <div class="section-inner">
+
         <h2>Projects</h2>
+
         <p class="section-intro">
-          Selected work from real-world projects, production websites, and personal builds.
+          Selected work from production websites, professional development,
+          and personal builds.
         </p>
 
         <div class="project-list">
 
-          <article class="project">
+
+          <!-- PROJECT 1 -->
+          <article class="project reveal">
+
             <div class="project-header">
-              <h3>Personal Portfolio</h3>
-              <span class="project-tech">HTML · CSS · JavaScript</span>
+
+              <h3>Ongoing Web Applications</h3>
+
+              <span class="project-tech">
+                WordPress · React · XML · XSLT · PostgreSQL · Retool Custom Components
+              </span>
+
             </div>
+
             <p>
-              A personal portfolio website built to showcase my web development experience,
-              focusing on clean layout, responsive design, and modern UI practices.
+              Ongoing development work involving web applications, custom
+              components, database integration, and XML/XSLT transformations.
             </p>
+
           </article>
 
-          <article class="project">
+
+          <!-- PROJECT 2 -->
+          <article class="project reveal">
+
             <div class="project-header">
+
               <h3>Chefs in the House</h3>
-              <span class="project-tech">WordPress · PHP · CSS</span>
+
+              <span class="project-tech">
+                WordPress · CSS · AI-Assisted Development
+              </span>
+
             </div>
+
             <p>
-              A live production catering website built and maintained using WordPress.
-              Focused on elegant presentation, content structure, and performance.
+              Designed and built a website to showcase a catering business
+              and improve its existing online presence.
             </p>
-            <a href="https://chefsinthehouse.com" target="_blank" class="project-link">
+
+            <a
+              href="https://chefsinthehouse.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
               View Website →
             </a>
+
           </article>
 
-          <article class="project">
-            <div class="project-header">
-              <h3>Osaki Hachimangu</h3>
-              <span class="project-tech">WordPress</span>
-            </div>
-            <p>
-              Developed and customized most of the website during my internship.
-              Worked on layout, content updates, and WordPress theme adjustments.
-            </p>
-            <a href="https://www.osakihachimangu.com" target="_blank" class="project-link">
-              View Website →
-            </a>
-          </article>
 
-          <article class="project">
+          <!-- PROJECT 3 -->
+          <article class="project reveal">
+
             <div class="project-header">
+
               <h3>GripX Philippines</h3>
-              <span class="project-tech">HTML · CSS · JavaScript · PHP · MySQL</span>
+
+              <span class="project-tech">
+                HTML · CSS · JavaScript · PHP · MySQL · MVC
+              </span>
+
             </div>
+
             <p>
-              Designed and developed a company website using a custom MVC architecture
-              with AJAX-based interactions. The site is no longer active.
+              Developed and deployed the company's website using HTML, CSS,
+              and JavaScript while contributing to an MVC-based application.
             </p>
+
+            <a
+              href="https://drive.google.com/file/d/1sAnnfI5_J6sk4bfcc_xbB4C0Ur4DRyCV/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View Screenshot →
+            </a>
+
           </article>
+
+
+          <!-- PROJECT 4 -->
+          <article class="project reveal">
+
+            <div class="project-header">
+
+              <h3>Osaki Hachimangu</h3>
+
+              <span class="project-tech">
+                WordPress
+              </span>
+
+            </div>
+
+            <p>
+              Contributed to the development and customization of the website
+              during my internship.
+            </p>
+
+            <a
+              href="https://www.osakihachimangu.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View Website →
+            </a>
+
+          </article>
+
 
         </div>
+
       </div>
     </section>
 
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
     <section class="experience" id="experience">
+
       <div class="section-inner">
+
         <h2>Experience</h2>
+
 
         <div class="timeline">
 
+
+          <!-- GDS LINK ASIA -->
           <div class="timeline-item">
+
             <div class="timeline-dot"></div>
+
             <div class="timeline-content">
-              <span class="timeline-company">Current Company</span>
-              <h3>Junior WordPress Developer</h3>
-              <span class="timeline-date">2022 – Present</span>
+
+              <span class="timeline-company">
+                GDS Link Asia
+              </span>
+
+              <h3>
+                Junior Software Developer
+              </h3>
+
+              <span class="timeline-date">
+                July 2023 – Present
+              </span>
+
               <p>
-                Worked on production WordPress applications, connected CMS systems
-                with React-based frontends, and developed backend features using PHP and MySQL.
-                Recently transitioned into Retool development and custom React components.
+                Build and maintain web applications using React, PHP,
+                and WordPress. Contribute to MVC-based applications,
+                responsive interfaces, and email templates while working
+                with MySQL and PostgreSQL databases.
               </p>
+
+              <p>
+                More recently, my work has expanded into Retool development,
+                custom React components, XML parsing, XSLT transformations,
+                code refactoring, and application performance optimization.
+              </p>
+
             </div>
+
           </div>
 
+
+          <!-- GRIPX -->
           <div class="timeline-item">
+
             <div class="timeline-dot"></div>
+
             <div class="timeline-content">
-              <span class="timeline-company">GripX Philippines</span>
-              <h3>Web Developer</h3>
-              <span class="timeline-date">2021 – 2022</span>
+
+              <span class="timeline-company">
+                GripX Philippines
+              </span>
+
+              <h3>
+                Junior Web Developer
+              </h3>
+
+              <span class="timeline-date">
+                January 2023 – May 2023
+              </span>
+
               <p>
-                Developed and deployed company website using MVC architecture,
-                AJAX interactions, PHP backend, and MySQL database integration.
+                Developed and deployed the company's website using HTML,
+                CSS, and JavaScript while contributing to an ongoing
+                MVC-based project.
               </p>
+
+              <p>
+                Worked on responsive layouts, source control with Git,
+                quality assurance, performance optimization, and
+                collaboration with the marketing team.
+              </p>
+
             </div>
+
           </div>
 
+
+          <!-- DESIGN SOURCE MEDIA -->
           <div class="timeline-item">
+
             <div class="timeline-dot"></div>
+
             <div class="timeline-content">
-              <span class="timeline-company">Design Source Media</span>
-              <h3>Intern – WordPress Developer</h3>
-              <span class="timeline-date">3 Months</span>
+
+              <span class="timeline-company">
+                Design Source Media
+              </span>
+
+              <h3>
+                Web Developer Intern
+              </h3>
+
+              <span class="timeline-date">
+                June 2019 – September 2019
+              </span>
+
               <p>
-                Developed and customized WordPress websites. Built approximately
-                90% of the Osaki Hachimangu website during internship.
+                Developed and customized websites using WordPress,
+                with a focus on tablet and mobile responsiveness.
               </p>
+
+              <p>
+                Also handled website tweaks and assisted with contact
+                and mailing list updates for a project in development.
+              </p>
+
             </div>
+
           </div>
+
 
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
     <section class="contact" id="contact">
+
       <div class="section-inner">
+
         <h2>Let's Work Together</h2>
 
         <p class="contact-intro">
-          I'm open to new opportunities, collaborations, and interesting projects.
-          If you'd like to get in touch, feel free to reach out.
+          I'm open to new opportunities, collaborations, and interesting
+          projects. If you'd like to get in touch, feel free to reach out.
         </p>
 
-        <a href="mailto:espulgarkyle25@gmail.com" class="contact-button">
+        <a
+          href="mailto:espulgarkyle25@gmail.com"
+          class="contact-button"
+        >
           Email Me
         </a>
+
       </div>
+
     </section>
 
+
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
+
   </body>
 </html>
