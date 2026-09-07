@@ -19,12 +19,7 @@ html {
 
 body {
   margin: 0;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg-main);
   background-attachment: fixed;
   color: var(--text-main);
@@ -47,7 +42,6 @@ section,
 header {
   scroll-margin-top: var(--navbar-height);
 }
-
 
 /* =========================
    NAVBAR
@@ -78,10 +72,8 @@ header {
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(12px);
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 
 /* LOGO */
 
@@ -91,7 +83,6 @@ header {
   font-weight: 600;
   opacity: 0.9;
 }
-
 
 /* NAVIGATION */
 
@@ -109,8 +100,7 @@ header {
   text-decoration: none;
   color: var(--text-muted);
   font-size: 0.9rem;
-  transition:
-    color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 .navbar-links a::after {
@@ -132,7 +122,6 @@ header {
   width: 100%;
 }
 
-
 /* MOBILE TOGGLE */
 
 .navbar-toggle {
@@ -144,7 +133,6 @@ header {
   cursor: pointer;
   padding: 0.25rem;
 }
-
 
 /* =========================
    HERO
@@ -185,7 +173,6 @@ header {
   color: var(--text-muted);
   line-height: 1.7;
 }
-
 
 /* HERO BUTTON */
 
@@ -255,9 +242,6 @@ header {
   width: 28px;
   height: 28px;
   object-fit: contain;
-
-  transition:
-    transform 0.25s ease;
 }
 
 /* =========================
@@ -268,9 +252,6 @@ header {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  /*
-    Separation from Tech Stack.
-  */
   margin-top: 1.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -289,7 +270,6 @@ header {
 
 .social-links a:hover {
   color: var(--text-main);
-
   transform: translateY(-2px);
 }
 
@@ -297,8 +277,7 @@ header {
   width: 28px;
   height: 28px;
   object-fit: contain;
-  transition:
-    opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .social-links a:hover img {
@@ -310,7 +289,7 @@ header {
 ========================= */
 
 section {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .container,
@@ -353,7 +332,7 @@ section {
 ========================= */
 
 .projects {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .projects h2 {
@@ -416,8 +395,7 @@ section {
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .project-link:hover {
@@ -429,7 +407,7 @@ section {
 ========================= */
 
 .experience {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .timeline {
@@ -437,7 +415,6 @@ section {
   margin-top: 3rem;
   padding-left: 2rem;
 }
-
 
 /* VERTICAL LINE */
 
@@ -450,7 +427,6 @@ section {
   height: 100%;
   background: var(--border-subtle);
 }
-
 
 /* TIMELINE ITEM */
 
@@ -468,7 +444,6 @@ section {
   margin-bottom: 0;
 }
 
-
 /* DOT */
 
 .timeline-dot {
@@ -479,16 +454,13 @@ section {
   height: 14px;
   background: var(--accent);
   border-radius: 50%;
-  box-shadow:
-    0 0 0 4px rgba(182, 227, 0, 0.08);
+  box-shadow: 0 0 0 4px rgba(182, 227, 0, 0.08);
 }
-
 
 /* CONTENT */
 
 .timeline-content {
   padding-left: 2rem;
-
   max-width: 760px;
 }
 
@@ -527,7 +499,7 @@ section {
 ========================= */
 
 .contact {
-  padding: 7rem 0 9rem;
+  padding: 5rem 0 7rem;
 }
 
 .contact-intro {
@@ -536,7 +508,6 @@ section {
   color: var(--text-main);
   line-height: 1.7;
 }
-
 
 /* CONTACT BUTTON */
 
@@ -575,13 +546,11 @@ section {
   transform: translateY(0);
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
-
   .hero-inner {
     gap: 3rem;
   }
@@ -599,16 +568,13 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 768px) {
-
   /* NAVBAR */
 
   .navbar-inner {
@@ -653,7 +619,6 @@ section {
     color: var(--text-main);
   }
 
-
   /* HERO */
 
   .hero {
@@ -692,7 +657,6 @@ section {
     width: min(320px, 85vw);
   }
 
-
   /* TECH STACK */
 
   .tech-stack {
@@ -707,18 +671,16 @@ section {
     gap: 1rem;
   }
 
-
   /* SOCIAL LINKS */
 
   .social-links {
     margin-top: 1.5rem;
   }
 
-
   /* SECTIONS */
 
   section {
-    padding: 6rem 0;
+    padding: 4.5rem 0;
   }
 
   .container,
@@ -734,12 +696,7 @@ section {
     font-size: 2rem;
   }
 
-
   /* PROJECTS */
-
-  .projects {
-    padding: 6rem 0;
-  }
 
   .project-list {
     gap: 3rem;
@@ -748,7 +705,6 @@ section {
   .project {
     padding-left: 1rem;
   }
-
 
   /* EXPERIENCE */
 
@@ -775,22 +731,18 @@ section {
     font-size: 1.2rem;
   }
 
-
   /* CONTACT */
 
   .contact {
     padding-bottom: 7rem;
   }
-
 }
-
 
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-
   .hero-text h1 {
     font-size: 2.35rem;
   }
@@ -816,7 +768,6 @@ section {
   .project {
     padding-left: 0.85rem;
   }
-
 }
 
 /* =========================
@@ -836,5 +787,4 @@ section {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-
 }
